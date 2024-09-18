@@ -1,0 +1,69 @@
+<!-- <div class="grid" style="background: red; padding: 15px;">
+    
+    <div class="col-12 md:col-offset-1 md:col-1 lg:col-offset-1 lg:col-1">
+        <a class="logo" href="/">
+            <img style="height: 40px;" src="assets/images/png/logo_2024.png" alt="IN STAGE">
+        </a>
+    </div>
+    <div class="col-12 md:col-2 lg:col-2">
+        afaefaef
+    </div>
+
+    <div class="col-12 md:col-2 lg:col-2">
+        afaef
+    </div>
+        
+    <ul id="topbar-usermenu" class="usermenu usermenu-overlay fadeInDown">
+        <li>
+            <a>
+                <i class="pi pi-fw pi pi-pencil"></i>
+                <span class="topbar-item-name">Editar Perfil</span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <i class="pi pi-fw pi pi-key"></i>
+                <span class="topbar-item-name">Alterar Senha</span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <i class="pi pi-fw pi-sign-out"></i>
+                <span class="topbar-item-name">Sair</span>
+            </a>
+        </li>
+    </ul>
+
+</div> -->
+
+<div>
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <a class="logo" href="/">
+                <!-- <img style="height: 40px;" src="assets/images/png/logo_2024.png" alt="IN STAGE"> -->
+            </a>
+        </ng-template>
+
+        <ng-template pTemplate="item" let-item let-root="root">
+            <a pRipple class="flex justify-content-end p-menuitem-link">
+                <span [class]="item.icon"></span>
+                <span class="ml-2">{{ item.label }}</span>
+            </a>
+        </ng-template>
+
+        <ng-template pTemplate="end" let-item let-root="root">
+            <div class="flex align-items-center gap-2">
+                <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="p-button font-bold">
+                    Contato
+                </a>
+
+                <ng-template pTemplate="item" let-item let-root="root">
+                    <a pRipple class="flex justify-content-end p-menuitem-link">
+                        <span [class]="item.icon"></span>
+                        <span class="ml-2">{{ item.label }}</span>
+                    </a>
+                </ng-template>
+            </div>
+        </ng-template>
+    </p-menubar>
+</div>
