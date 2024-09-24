@@ -40,30 +40,24 @@
     <p-menubar [model]="items">
         <ng-template pTemplate="start">
             <a class="logo" href="/">
-                <!-- <img style="height: 40px;" src="assets/images/png/logo_2024.png" alt="IN STAGE"> -->
+                <img style="height: 40px;" src="assets/images/png/logo_2024.png" alt="IN STAGE">
             </a>
         </ng-template>
 
-        <ng-template pTemplate="item" let-item let-root="root">
-            <a pRipple class="flex justify-content-end p-menuitem-link">
+        <ng-template style="width: 100%;" pTemplate="item" let-item let-root="root">
+            <a pRipple [routerLink]="item.route" class="flex justify-content-end p-menuitem-link">
                 <span [class]="item.icon"></span>
                 <span class="ml-2">{{ item.label }}</span>
             </a>
         </ng-template>
 
-        <ng-template pTemplate="end" let-item let-root="root">
+        <ng-template pTemplate="end">
             <div class="flex align-items-center gap-2">
                 <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="p-button font-bold">
                     Contato
                 </a>
-
-                <ng-template pTemplate="item" let-item let-root="root">
-                    <a pRipple class="flex justify-content-end p-menuitem-link">
-                        <span [class]="item.icon"></span>
-                        <span class="ml-2">{{ item.label }}</span>
-                    </a>
-                </ng-template>
             </div>
         </ng-template>
+
     </p-menubar>
 </div>

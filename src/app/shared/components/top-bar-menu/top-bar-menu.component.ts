@@ -18,19 +18,23 @@ export class TopBarMenuComponent implements OnInit {
     this.items = [
       {
         label: 'Home',
-        icon: 'pi pi-home'
+        icon: 'pi pi-home',
+        route: '/home'
       },
       {
         label: 'Artistas',
-        icon: 'pi pi-star'
+        icon: 'pi pi-star',
+        route: '/artistas'
       },
       {
         label: 'Soluções',
-        icon: 'pi pi-search'
+        icon: 'pi pi-search',
+        route: '/solucoes'
       },
       {
         label: 'Sobre',
-        icon: 'pi pi-envelope'
+        icon: 'pi pi-envelope',
+        route: '/sobre'
       },
     ];
   }
