@@ -3,18 +3,21 @@ import { GalleriaModule } from 'primeng/galleria';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { ImageModule } from 'primeng/image';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule, ButtonModule, TagModule],
+  imports: [CarouselModule, ButtonModule, TagModule, GalleriaModule, ImageModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
   products: any[] = [];
-
   responsiveOptions: any[] | undefined;
+
+  images: any[] | undefined;
 
   constructor() {}
 
@@ -51,6 +54,8 @@ export class HomeComponent implements OnInit {
         numScroll: 1,
       },
     ];
+
+    this.images = [{itemImageSrc: './../../../assets/images/home-carrosel/3.jpg'}, {itemImageSrc: './../../../assets/images/home-carrosel/2.jpg'}]
   }
 
   getSeverity(status: string) {
