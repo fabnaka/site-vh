@@ -5,6 +5,7 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 import { ArtistasComponent } from './pages/artistas/artistas.component';
 
 export const routes: Routes = [
+    { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'artistas', component: ArtistasComponent },
     { path: 'solucoes', component: SolucoesComponent },
