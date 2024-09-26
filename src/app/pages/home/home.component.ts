@@ -4,22 +4,37 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { ImageModule } from 'primeng/image';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule, ButtonModule, TagModule, GalleriaModule, ImageModule],
+  imports: [CarouselModule, ButtonModule, TagModule, GalleriaModule, ImageModule, CardModule, InputTextModule, ReactiveFormsModule, FormsModule, InputTextareaModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
   products: any[] = [];
   responsiveOptions: any[] | undefined;
+  formGroup: FormGroup;
 
   images: any[] | undefined;
 
-  constructor() {}
+  constructor(
+    private fb: FormBuilder
+  ) {
+    this.formGroup = this.fb.group({
+      name: [undefined],
+      phone: [undefined],
+      email: [undefined],
+      message: [undefined],
+    });
+  }
 
   ngOnInit() {
     this.products = [
