@@ -8,7 +8,7 @@
 
             <div class="col-12 md:col-offset-5 md:col-2 lg:col-offset-5 lg:col-2" style="text-align: center;">
                 <button pButton pRipple label="Entre em contato" class="p-button-success"
-                    style="width: 100%; height: 50px;"></button>
+                    style="width: 100%; height: 50px;" (click)="goContato()"></button>
             </div>
         </div>
 
@@ -67,13 +67,17 @@
             </div>
 
             <div class="col-12 md:col-offset-2 md:col-3 lg:col-offset-2 lg:col-3">
-                <button pButton pRipple label="Conheça todo o Casting!" class="p-button-success"
-                    style="width: 100%; height: 50px; background: #2d0c34;"></button>
+                <a routerLink="/artistas" class="p-button font-bold" style="width: 100%; height: 50px; background: #2d0c34">
+                    <p style="width: 100%;">Conheça todo o Casting!</p>
+                </a>
             </div>
 
             <div class="col-12 md:col-offset-1 md:col-3 lg:col-3 lg:col-offset-1">
-                <button pButton pRipple label="Conheça as Soluções para Artistas" class="p-button-success"
-                    style="width: 100%; height: 50px; background: #f1790b;"></button>
+                <a routerLink="/solucoes" class="p-button font-bold" style="width: 100%; height: 50px; background: #f1790b">
+                    <p style="width: 100%;">Conheça as Soluções para Artistas</p>
+                </a>
+                <!-- <button pButton pRipple label="Conheça as Soluções para Artistas" class="p-button-success"
+                    style="width: 100%; height: 50px; background: #f1790b;"></button> -->
             </div>
         </div>
 
@@ -109,7 +113,7 @@
                 <h2> <i class="pi pi-whatsapp" style="font-weight: bold;"></i> +55(xx) xxxxx-xxxxx</h2>
             </div>
 
-            <div class="col-12 md:col-4 lg:col-4 ">
+            <div class="col-12 md:col-4 lg:col-4 " id="contato">
                 <p-card>
                     <form [formGroup]="formGroup">
                         <div class="grid">

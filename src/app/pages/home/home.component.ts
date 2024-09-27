@@ -9,12 +9,14 @@ import { InputTextModule } from 'primeng/inputtext';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputTextareaModule } from 'primeng/inputtextarea';
+import { RouterModule } from '@angular/router';
+import { Router } from "@angular/router";
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule, ButtonModule, TagModule, GalleriaModule, ImageModule, CardModule, InputTextModule, ReactiveFormsModule, FormsModule, InputTextareaModule],
+  imports: [CarouselModule, ButtonModule, TagModule, GalleriaModule, ImageModule, CardModule, InputTextModule, ReactiveFormsModule, FormsModule, InputTextareaModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -26,7 +28,8 @@ export class HomeComponent implements OnInit {
   images: any[] | undefined;
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ) {
     this.formGroup = this.fb.group({
       name: [undefined],
@@ -71,17 +74,11 @@ export class HomeComponent implements OnInit {
     ];
 
     this.images = [{itemImageSrc: './../../../assets/images/home-carrosel/3.jpg'}, {itemImageSrc: './../../../assets/images/home-carrosel/2.jpg'}]
+
+    this.router.navigate(["/"]);
   }
 
-  getSeverity(status: string) {
-    switch (status) {
-      case 'INSTOCK':
-        return 'success';
-      case 'LOWSTOCK':
-        return 'warning';
-      case 'OUTOFSTOCK':
-        return 'danger';
-    }
-    return;
+  goContato() {
+    document.getElementById("contato")?.scrollIntoView({ behavior: 'smooth' })
   }
 }
