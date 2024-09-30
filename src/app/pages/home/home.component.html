@@ -2,8 +2,9 @@
     <div class="col-12 md:col-12 lg:col-12">
         <div class="grid">
 
-            <div class="col-12 md:col-12 lg:col-12">
-                <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%" height="550" />
+            <div class="col-12 md:col-12 lg:col-12" style="position: relative; display: inline-block;">
+                <p-image src="./../../../assets/images/home/1.jpg" alt="Image" width="100%" height="509"/>
+                <p class="texto">We’re the backstage,  the artists, and partygoers of your events. We’re INSTAGE!</p>
             </div>
 
             <div class="col-12 md:col-offset-5 md:col-2 lg:col-offset-5 lg:col-2" style="text-align: center;">
@@ -23,21 +24,34 @@
                     <p-carousel [value]="products" [numVisible]="3" [numScroll]="3"
                         [responsiveOptions]="responsiveOptions">
                         <ng-template let-product pTemplate="item">
-                            <div class="border-1 surface-border border-round m-2 p-3">
+                            <div class="surface-border border-round m-2 p-3">
                                 <div class="mb-3">
                                     <div class="relative mx-auto">
                                         <img src="./../../../assets/images/home-carrosel/{{product.image}}"
                                             [alt]="product.name" class="w-full border-round" />
                                     </div>
                                 </div>
-                                <div class="mb-3 font-medium">
-                                    {{ product.name }}
+                                <div class="mb-3 font-medium" style="text-align: center;">
+                                    <h5 style="font-weight: bold;">{{ product.name }}</h5> 
                                 </div>
                             </div>
                         </ng-template>
                     </p-carousel>
                 </div>
             </div>
+
+            <!-- <div class="col-12 md:col-12 lg:col-12">
+                <p-carousel [value]="servicos" orientation="vertical" [numVisible]="2" [numScroll]="2" [circular]="true"
+                    [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
+                    <ng-template let-servico pTemplate="item">
+                        <div class="relative mx-auto">
+                            <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250" height="250"/>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div> -->
+
+
         </div>
 
         <div class="grid" style="margin-top: 10px;">
@@ -47,19 +61,19 @@
 
             <div class="col-12 md:col-12 lg:col-12">
                 <div class="card">
-                    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3"
-                        [responsiveOptions]="responsiveOptions">
-                        <ng-template let-product pTemplate="item">
-                            <div class="border-1 surface-border border-round m-2 p-3">
+                    <p-carousel [value]="artistas_array" [numVisible]="3" [numScroll]="3"
+                        [responsiveOptions]="responsiveOptions" >
+                        <ng-template let-artista pTemplate="item" >
+                            <div class=" surface-border border-round m-2 p-3">
                                 <div class="mb-3">
                                     <div class="relative mx-auto">
-                                        <img src="./../../../assets/images/home-carrosel/{{product.image}}"
-                                            [alt]="product.name" class="w-full border-round" />
+                                        <img src={{artista.foto}}
+                                            [alt]="artista.nome" class="w-full border-round"/>
                                     </div>
                                 </div>
-                                <div class="mb-3 font-medium">
-                                    {{ product.name }}
-                                </div>
+                                <!-- <div class="mb-3 font-medium">
+                                    {{ artista.nome }}
+                                </div> -->
                             </div>
                         </ng-template>
                     </p-carousel>

@@ -1,0 +1,11 @@
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto */
+    font-size: 64px; /* Tamanho da fonte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+    text-align: center;
+
+}

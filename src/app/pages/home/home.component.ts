@@ -24,8 +24,21 @@ export class HomeComponent implements OnInit {
   products: any[] = [];
   responsiveOptions: any[] | undefined;
   formGroup: FormGroup;
+  servicos: any[] = []
 
   images: any[] | undefined;
+
+  artistas_array: any[] = [
+    { nome: "VH", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "PEDRO CORREA", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "KAROL ALONSO", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "PADOVA", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "LOREN", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "KRONE", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "GNESIS", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "JAY JENNER", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { nome: "IRIS", foto: "./../../../assets/images/artistas/vh.jpg" }
+  ];
 
   constructor(
     private fb: FormBuilder,
@@ -47,7 +60,7 @@ export class HomeComponent implements OnInit {
       },
       {
         name: 'CORPORATIVOS',
-        image: '2.jpg',
+        image: '1.jpg',
       },
       {
         name: 'LABELS/BARES/BALADAS/EVENTUAIS',
@@ -76,6 +89,15 @@ export class HomeComponent implements OnInit {
     this.images = [{itemImageSrc: './../../../assets/images/home-carrosel/3.jpg'}, {itemImageSrc: './../../../assets/images/home-carrosel/2.jpg'}]
 
     this.router.navigate(["/"]);
+
+    this.servicos = [
+      { name: 'Churasqueira' , image: "./../../../assets/images/artistas/vh.jpg"},
+      { name: 'Churasqueira' , image: "./../../../assets/images/artistas/vh.jpg"},
+      { name: 'Churasqueira' , image: "./../../../assets/images/artistas/vh.jpg"},
+      { name: 'Churasqueira' , image: "./../../../assets/images/artistas/vh.jpg"},
+      { name: 'Churasqueira' , image: "./../../../assets/images/artistas/vh.jpg"},
+      { name: 'Churasqueira' , image: "./../../../assets/images/artistas/vh.jpg"}
+    ]
   }
 
   goContato() {
