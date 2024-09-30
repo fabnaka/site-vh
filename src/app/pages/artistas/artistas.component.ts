@@ -13,15 +13,15 @@ import { ImageModule } from 'primeng/image';
 export class ArtistasComponent {
 
   artistas_array: any[] = [
-    { nome: "VH", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "PEDRO CORREA", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "KAROL ALONSO", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "PADOVA", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "LOREN", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "KRONE", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "GNESIS", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "JAY JENNER", foto: "./../../../assets/images/artistas/vh.jpg" },
-    { nome: "IRIS", foto: "./../../../assets/images/artistas/vh.jpg" }
+    { id: 1, nome: "VH", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 2, nome: "PEDRO CORREA", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 3, nome: "KAROL ALONSO", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 4, nome: "PADOVA", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 5, nome: "LOREN", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 6, nome: "KRONE", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 7, nome: "GNESIS", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 8, nome: "JAY JENNER", foto: "./../../../assets/images/artistas/vh.jpg" },
+    { id: 9, nome: "IRIS", foto: "./../../../assets/images/artistas/vh.jpg" }
   ];
 
 }
