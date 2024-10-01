@@ -12,3 +12,10 @@
     justify-content: space-between;
     // justify-content: end;
   }
+
+  .topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
