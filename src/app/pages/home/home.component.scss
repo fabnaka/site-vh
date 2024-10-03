@@ -7,5 +7,42 @@
     font-size: 64px; /* Tamanho da fonte */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
     text-align: center;
+}
 
+// .full-screen-background {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     background-image: url('./../../../assets/images/home/banner.png');
+//     background-size: cover;
+//     background-position: center;
+//     z-index: -1;
+// }
+
+// .content {
+//     position: relative;
+//     z-index: 1; /* Mantém o conteúdo acima da imagem de fundo */
+//     color: white; /* Exemplo de cor para o texto */
+//     padding: 20px;
+// }
+
+.home-image-background {
+    width: 100%; /* Largura 100% da tela */
+    height: 100vh; /* Altura igual à altura da viewport */
+    background-image: url('./../../../assets/images/home/banner.png');
+    background-size: cover; /* Cobre toda a área, mantendo a proporção */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.overlay-text {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+    color: white; /* Cor do texto */
+    font-size: clamp(1.5rem, 5vw, 4rem); /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
 }

@@ -1,21 +1,39 @@
 ::ng-deep p-menubarsub {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-    height: 60px;
-    //background-color: white;
-  }
-  
-  ::ng-deep .p-menubar-root-list {
-    width: 40%;
-    justify-content: space-between;
-    // justify-content: end;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  height: 60px;
+  //background-color: white;
+}
 
-  .topbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+span {
+  color: white;
+}
+
+::ng-deep .p-menubar-root-list {
+  width: 40%;
+  justify-content: space-between;
+  // justify-content: end;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+::ng-deep .transparent {
+  background-color: transparent;
+  border: 0px;
+  transition: background-color 0.5s;
+}
+
+
+::ng-deep .not-transparent {
+  background-color: rgba(51, 51, 51, 0.9);
+  border: 0px;
+  transition: background-color 0.5s;
+  /* Cor do menu quando não está transparente */
 }
