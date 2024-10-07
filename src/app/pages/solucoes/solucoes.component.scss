@@ -4,3 +4,15 @@ p{
     font-size: 20px;
     line-height: 32px;
 }
+
+.grid {
+    margin-right: 0;
+}
+
+.home-image-background {
+    //width: 100vw; /* Largura 100% da tela */
+    height: 40vh; /* Altura igual à altura da viewport */
+    background-image: url('./../../../assets/images/solucoes/3.jpg');
+    background-size: cover; /* Cobre toda a área, mantendo a proporção */
+    background-position: center; /* Centraliza a imagem */
+}

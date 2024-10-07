@@ -44,10 +44,10 @@ export class TopBarMenuComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled =  window.scrollY > 0 ? true : false
-    //console.log(this.isScrolled)
+    console.log(this.isScrolled)
   }
 
   get dynamicClass() {
-    return this.isScrolled ? 'not-transparent' : 'transparent';
+    return this.isScrolled ? 'nav-bar-not-transparent' : 'nav-bar-transparent';
   }
 }

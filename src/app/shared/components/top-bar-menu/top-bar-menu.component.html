@@ -1,63 +1,19 @@
-<!-- <div class="grid" style="background: red; padding: 15px;">
-    
-    <div class="col-12 md:col-offset-1 md:col-1 lg:col-offset-1 lg:col-1">
-        <a class="logo" href="/">
-            <img style="height: 40px;" src="assets/images/png/logo_2024.png" alt="IN STAGE">
-        </a>
-    </div>
-    <div class="col-12 md:col-2 lg:col-2">
-        afaefaef
-    </div>
-
-    <div class="col-12 md:col-2 lg:col-2">
-        afaef
-    </div>
-        
-    <ul id="topbar-usermenu" class="usermenu usermenu-overlay fadeInDown">
-        <li>
-            <a>
-                <i class="pi pi-fw pi pi-pencil"></i>
-                <span class="topbar-item-name">Editar Perfil</span>
-            </a>
-        </li>
-        <li>
-            <a>
-                <i class="pi pi-fw pi pi-key"></i>
-                <span class="topbar-item-name">Alterar Senha</span>
-            </a>
-        </li>
-        <li>
-            <a>
-                <i class="pi pi-fw pi-sign-out"></i>
-                <span class="topbar-item-name">Sair</span>
-            </a>
-        </li>
-    </ul>
-
-</div> -->
-
 <div class="topbar">
-    <p-menubar [model]="items" [styleClass]="dynamicClass">
-        <ng-template pTemplate="start">
-            <a class="logo" href="/">
-                <img style ="height: 40px; margin-left: 60px;" src="assets/images/png/logo_2024.png" alt="IN STAGE">
-            </a>
-        </ng-template>
+    <nav>
+        <ul [ngClass]="{ 'nav-bar-not-transparent': isScrolled, 'nav-bar-transparent': !isScrolled }">
+            <li class="logo">
+                <a href=""> <img src="assets/images/png/logo_transparent.png" alt="logo"> </a>
+            </li>
 
-        <ng-template style="width: 100%;" pTemplate="item" let-item let-root="root">
-            <a pRipple [routerLink]="item.route" class="flex justify-content-end p-menuitem-link">
-                <span [class]="item.icon"></span>
-                <span class="ml-2">{{ item.label }}</span>
-            </a>
-        </ng-template>
+            <input type="checkbox" id="check">
 
-        <ng-template pTemplate="end">
-            <div class="flex align-items-center gap-2">
-                <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="p-button font-bold">
-                    Contato
-                </a>
-            </div>
-        </ng-template>
-
-    </p-menubar>
+            <span class="menu">
+                <ng-container *ngFor="let item of items">
+                    <li><a href="{{item.route}}">{{item.label}}</a></li>
+                </ng-container>
+                <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+        </ul>
+    </nav>
 </div>
