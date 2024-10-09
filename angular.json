@@ -28,7 +28,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "dist/routingapp/netlify.toml"
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss",
