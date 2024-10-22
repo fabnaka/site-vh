@@ -7,6 +7,31 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Tamanho de fonte padrão */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho do título 1 */
+    font-weight: 700; /* Negrito */
+    //margin: 1.5rem 0; /* Margem vertical */
+}
+
+h2 {
+    font-size: 2rem; /* Tamanho do título 2 */
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.75rem; /* Tamanho do título 3 */
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1.2rem; /* Tamanho do parágrafo */
 }

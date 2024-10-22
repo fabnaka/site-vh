@@ -42,9 +42,10 @@
 }
 
 .home-image-background {
-    width: 100vw; /* Largura 100% da tela */
-    height: 40vh; /* Altura igual à altura da viewport */
-    background-image: url('./../../../assets/images/solucoes/3.jpg');
+    //width: 100vw; /* Largura 100% da tela */
+    height: 35vh; /* Altura igual à altura da viewport */
+    /* background-image: url('./../../../assets/images/solucoes/3.jpg'); */
+    background: #2D0C34;
     background-size: cover; /* Cobre toda a área, mantendo a proporção */
     background-position: center; /* Centraliza a imagem */
 }

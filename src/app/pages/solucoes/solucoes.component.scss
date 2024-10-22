@@ -1,8 +1,8 @@
 p{
-    font: Inter;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    //font: Inter;
+    //font-weight: 400;
+    //font-size: 20px;
+    //line-height: 32px;
 }
 
 .grid {
@@ -11,8 +11,28 @@ p{
 
 .home-image-background {
     //width: 100vw; /* Largura 100% da tela */
-    height: 40vh; /* Altura igual à altura da viewport */
-    background-image: url('./../../../assets/images/solucoes/3.jpg');
+    height: 35vh; /* Altura igual à altura da viewport */
+    /* background-image: url('./../../../assets/images/solucoes/3.jpg'); */
+    background: #2D0C34;
     background-size: cover; /* Cobre toda a área, mantendo a proporção */
     background-position: center; /* Centraliza a imagem */
+}
+
+.overlay-text {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    top: 20%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+    color: white; /* Cor do texto */
+    font-size: clamp(1.0rem, 5vw, 3rem); /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+}
+
+
+.container {
+    width: 100%;
+    display: flex;               /* Torna o contêiner um flexbox */
+    flex-direction: column;      /* Alinha os filhos em coluna */
+    justify-content: flex-end;
 }

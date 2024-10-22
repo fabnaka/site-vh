@@ -10,7 +10,7 @@
   height: 80px;
   top: 0;
   z-index: 1000;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   --color1: #FFF;
   --color2: #181818;
 }
@@ -96,7 +96,7 @@
   .menu li {margin-top: 40px;}
   .menu li a { padding: 10px; }
   .open-menu, .close-menu {display: block;}
-  #check:checked ~ .menu {right: 0;}
+  #check:checked ~ .menu {left: 0;}
 }
 
 .nav-bar-transparent{

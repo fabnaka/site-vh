@@ -24,14 +24,14 @@ export class TopBarMenuComponent implements OnInit {
         route: '/home',
       },
       {
-        label: 'Artistas',
-        icon: 'pi pi-star',
-        route: '/artistas',
-      },
-      {
         label: 'Soluções',
         icon: 'pi pi-search',
         route: '/solucoes',
+      },
+      {
+        label: 'Artistas',
+        icon: 'pi pi-star',
+        route: '/artistas',
       },
       {
         label: 'Sobre',
