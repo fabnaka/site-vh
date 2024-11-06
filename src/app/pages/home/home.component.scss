@@ -16,10 +16,15 @@
     background-image: url('./../../../assets/images/home/banner.png');
     background-size: cover; /* Cobre toda a área, mantendo a proporção */
     background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed;
+    //transform: translateZ(-10px) scale(2);
+    //object-fit: cover;
+    //position: absolute;
 }
 
 .overlay-text {
     position: absolute; /* Posiciona o texto sobre a imagem */
+    //position: relative; /* Posiciona o texto sobre a imagem */
     top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
