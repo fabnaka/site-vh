@@ -3,12 +3,12 @@
     width: 56%;
 }
 
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
+// .image {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+//     text-align: center;
+// }
 
 .overlay {
     position: absolute;
@@ -49,6 +49,17 @@
     background-size: cover; /* Cobre toda a área, mantendo a proporção */
     background-position: center; /* Centraliza a imagem */
 }
+
 .grid {
     margin-right: 0;
 }
+
+.fading-6 {
+    background: 
+       linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent 30% 70%, rgba(0, 0, 0, 0.5)) 
+       center/300% 100% no-repeat;
+    transition: 0.5s;
+  }
+  .fading-6:hover {
+    background-size: 100% 100%;
+  }
