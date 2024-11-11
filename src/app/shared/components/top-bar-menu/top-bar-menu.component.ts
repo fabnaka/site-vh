@@ -15,8 +15,13 @@ import { RippleModule } from 'primeng/ripple';
 export class TopBarMenuComponent implements OnInit {
   items: MenuItem[] | undefined;
   isScrolled: boolean = false;
+  isMobile: boolean = false;
 
   ngOnInit(): void {
+    if (typeof window !== 'undefined') {
+      this.isMobile = window.innerWidth <= 610 ? true : false
+    }
+    
     this.items = [
       {
         label: 'Home',
@@ -44,7 +49,11 @@ export class TopBarMenuComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled =  window.scrollY > 0 ? true : false
-    console.log(this.isScrolled)
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.isMobile = window.innerWidth <= 610 ? true : false 
   }
 
   get dynamicClass() {

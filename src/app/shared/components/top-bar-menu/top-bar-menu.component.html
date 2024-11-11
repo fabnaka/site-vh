@@ -1,8 +1,16 @@
 <div class="topbar">
     <nav>
-        <ul [ngClass]="{ 'nav-bar-not-transparent': isScrolled, 'nav-bar-transparent': !isScrolled }">
+        <ul [ngClass]="{ 
+        'nav-bar-not-transparent': isScrolled, 
+        'nav-bar-transparent': !isScrolled, 
+        'nav-bar-mobile': isMobile, 
+        'nav-bar-not-mobile': !isMobile }">
+            
+            <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
             <li class="logo">
-                <a href=""> <img src="assets/images/png/logo_transparent.png" alt="logo"> </a>
+                <a href=""> 
+                    <img src="assets/images/png/logo_transparent.png" alt="logo"> 
+                </a>
             </li>
 
             <input type="checkbox" id="check">
@@ -13,7 +21,6 @@
                 </ng-container>
                 <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
             </span>
-            <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
         </ul>
     </nav>
 </div>

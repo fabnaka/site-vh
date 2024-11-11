@@ -67,7 +67,7 @@
 
 .open-menu {
   top: 50%;
-  right: 20px;
+  left: 20px;
   transform: translateY(-50%);
 }
 
@@ -96,14 +96,22 @@
   .menu li {margin-top: 40px;}
   .menu li a { padding: 10px; }
   .open-menu, .close-menu {display: block;}
-  #check:checked ~ .menu {left: 0;}
+  #check:checked ~ .menu {left: 0;}  
+}
+
+.nav-bar-mobile {
+  justify-content: center;
+}
+
+.nav-bar-not-mobile {
+  justify-content: space-between;
 }
 
 .nav-bar-transparent{
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
   list-style: none;
   position: relative;
@@ -116,7 +124,7 @@
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
   list-style: none;
   position: relative;
