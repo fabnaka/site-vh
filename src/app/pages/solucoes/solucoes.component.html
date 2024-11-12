@@ -5,15 +5,13 @@
     <div class="grid">
         <div class="col-12 md:col-12 lg:col-12">
             <div class="grid" style="margin-top: 20px; padding: 30px;">
-                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="background: red;">
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10">
                     <div class="grid">
-    
-                        <div class="col-12 md:col-6 lg:col-6" style="margin: 10px;">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
                             <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
                                 height="100%" />
                         </div>
-    
-                        <div class="col-12 md:col-6 lg:col-6" style="margin: 10px;">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
                             <div class="grid" style="height: 100%;">
                                 <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
                                     <p style="font-weight: bold;">PRIVADOS</p>
@@ -51,10 +49,9 @@
                     </div>
                 </div>
     
-    
-                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 30px;" style="background: blue;">
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 30px; padding-left: 10px;">
                     <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
-                        [responsiveOptions]="responsiveOptions">
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
                         <ng-template let-servico pTemplate="item">
                             <div class="relative mx-auto">
                                 <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
@@ -64,9 +61,9 @@
                     </p-carousel>
                 </div>
     
-                <div class="col-12 md:col-12 lg:col-12" style="margin-top: 60px;">
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 60px;">
                     <div class="grid" >
-                        <div class="col-12 md:col-5 lg:col-5 md:col-offset-1 lg:col-offset-1" style="margin: 10px;">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
                             <div class="grid" style="height: 100%;">
                                 <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
                                     <p style="font-weight: bold;">CORPORATIVOS</p>
@@ -95,18 +92,16 @@
                             </div>
                         </div>
     
-                        <div class="col-12 md:col-5 lg:col-5" style="margin: 10px;">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
                             <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
                                 height="100%" />
                         </div>
-    
-    
                     </div>
                 </div>
     
-                <div class="col-12 md:col-12 lg:col-12" style="margin-top: 30px;">
+                <div class="col-12 md:col-offset-1 lg:col-offset-1 md:col-10 lg:col-10" style="margin-top: 30px;">
                     <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
-                        [responsiveOptions]="responsiveOptions">
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
                         <ng-template let-servico pTemplate="item">
                             <div class="relative mx-auto">
                                 <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
@@ -116,14 +111,14 @@
                     </p-carousel>
                 </div>
     
-                <div class="col-12 md:col-12 lg:col-12" style="margin-top: 60px;">
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1" style="margin-top: 60px;">
                     <div class="grid">
-                        <div class="col-12 md:col-5 lg:col-5 md:col-offset-1 lg:col-offset-1" style="margin: 10px;">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
                             <p-image src="./../../../assets/images/home-carrosel/3.jpg" alt="Image" width="100%"
                                 height="100%" />
                         </div>
     
-                        <div class="col-12 md:col-5 lg:col-5" style="margin: 10px;">
+                        <div class="col-12 md:col-6 lg:col-6" style="padding: 10px;">
                             <div class="grid" style="height: 100%;">
                                 <div class="col-12 md:col-12 lg:col-12" style="text-align: justify;">
                                     <p style="font-weight: bold;">BARES, BALADAS E PRODUÇÕES EVENTUAIS</p>
@@ -152,9 +147,9 @@
                     </div>
                 </div>
     
-                <div class="col-12 md:col-12 lg:col-12" style="margin-top: 30px;">
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1" style="margin-top: 30px;">
                     <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
-                        [responsiveOptions]="responsiveOptions">
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
                         <ng-template let-servico pTemplate="item">
                             <div class="relative mx-auto">
                                 <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
@@ -200,9 +195,9 @@
                     </div>
                 </div>
     
-                <div class="col-12 md:col-12 lg:col-12" style="margin-top: 30px;">
+                <div class="col-12 md:col-10 lg:col-10 md:col-offset-1 lg:col-offset-1" style="margin-top: 30px;">
                     <p-carousel [value]="servicos" [numVisible]="5" [numScroll]="2" [circular]="true"
-                        [responsiveOptions]="responsiveOptions">
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
                         <ng-template let-servico pTemplate="item">
                             <div class="relative mx-auto">
                                 <img src="{{servico.image}}" [alt]="servico.name" class="border-round" width="250"
@@ -212,6 +207,5 @@
                     </p-carousel>
                 </div>
             </div>
-    
         </div>
 </div>

@@ -7,9 +7,11 @@
                 <div *ngFor="let artista of artistas_array" class="col-12 md:col-4 lg:col-4">
                     <div class="container" style="display: flex; justify-content: center; align-items: center; text-align: center; width: 80%; margin: 0 auto;">
                         <img src={{artista.foto}} alt="Avatar" style="width: 100%; height: 100%; overflow: hidden;">
-                        <div class="overlay">
-                            <div class="text"><h3>{{artista.nome}}</h3></div>
-                        </div>                        
+                        <a href="/artistas/{{artista.id}}">
+                            <div class="overlay">
+                                <div class="text"><h3>{{artista.nome}}</h3></div>
+                            </div>                        
+                        </a>
                     </div>
                     
                 </div>
